@@ -51,10 +51,10 @@ module.exports = (env, argv) => {
       new CopyPlugin({
         patterns: [
           { from: '_redirects', to: '' },
-          {
-            from: 'src/images',
-            to: 'images',
-          },
+          // {
+          //   from: 'src/images',
+          //   to: 'images',
+          // },
         ],
       }),
     ],

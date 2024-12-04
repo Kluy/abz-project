@@ -3,7 +3,7 @@ import Text from '../text/Text';
 import Image from '../image/Image';
 import './card.scss';
 
-const Card = ({ photo, name, position, email, phone }) => {
+const Card = ({ user: { photo, name, position, email, phone } }) => {
   return (
     <li className="card">
       <Image className="photo" src={photo} alt="User photo" type="photo" />

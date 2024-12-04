@@ -27,15 +27,8 @@ const Get = ({ getUsers, users, page, count, totalPages }) => {
         <Preloader />
       ) : (
         <ul className="cards">
-          {users.map(elem => (
-            <Card
-              key={elem.id}
-              photo={elem.photo}
-              name={elem.name}
-              position={elem.position}
-              email={elem.email}
-              phone={elem.phone}
-            />
+          {users.map(user => (
+            <Card key={user.id} user={user} />
           ))}
         </ul>
       )}
